@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>見立てて任せる実践研修</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap');
@@ -49,6 +54,7 @@
 
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  html, body { overflow-x: hidden; max-width: 100%; }
   body {
     margin: 0;
     background: var(--bg);
@@ -135,9 +141,13 @@
   nav.jump a:hover, nav.jump a:focus-visible { border-bottom-color: #fff; }
 
   @media (max-width: 620px) {
-    .hero-grid { grid-template-columns: 1fr; }
-    nav.jump { flex-direction: row; flex-wrap: wrap; align-self: start; }
+    header.hero { min-height: 300px; }
+    .hero-grid { grid-template-columns: 1fr; padding: 32px 20px 44px; }
+    nav.jump { flex-direction: row; flex-wrap: wrap; align-self: start; gap: 14px; }
     nav.jump a { text-align: left; font-size: 13px; }
+    .tabbar { padding: 0 16px; }
+    .tabbar a { flex: 1 1 45%; font-size: 13px; padding: 12px 8px; }
+    .page { padding: 36px 16px 48px; }
   }
 
   /* ---------- tab bar (pill buttons, like 2DAY/3MOS/サークル) ---------- */
@@ -271,6 +281,8 @@
     .col-no { grid-row: 1 / span 3; }
   }
 </style>
+</head>
+<body>
 
 <header class="hero">
   <div class="hero-grid">
@@ -417,3 +429,6 @@
     });
   })();
 </script>
+
+</body>
+</html>
