@@ -218,6 +218,43 @@
     .why-grid { grid-template-columns: 1fr; }
   }
 
+  /* instructor */
+  .instructor-card {
+    background: var(--card); border: 1px solid var(--hair); border-radius: 4px;
+    padding: 20px 22px; border-left: 3px solid var(--sky);
+  }
+  .instructor-name { margin: 0 0 4px; font-size: 17px; font-weight: 900; color: var(--sky-deep); }
+  :root:not([data-theme="light"]) .instructor-name,
+  :root[data-theme="dark"] .instructor-name { color: var(--sky); }
+  .instructor-org { font-size: 13px; font-weight: 700; color: var(--muted); }
+  .instructor-role { margin: 0 0 12px; font-size: 13px; color: var(--muted); font-weight: 700; }
+  .instructor-desc { margin: 0; font-size: 13.5px; color: var(--ink); }
+
+  /* archive */
+  .archive-lead { font-size: 13.5px; color: var(--ink); margin: 0 0 14px; }
+  .archive-lead strong { color: var(--sky-deep); }
+  :root:not([data-theme="light"]) .archive-lead strong,
+  :root[data-theme="dark"] .archive-lead strong { color: var(--sky); }
+  .archive-list { display: grid; gap: 8px; margin-top: 18px; }
+  .archive-item {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--card); border: 1px solid var(--hair); border-radius: 4px; padding: 12px 16px;
+  }
+  .archive-no {
+    display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+    font-weight: 900; font-size: 13px; color: #fff; background: var(--sky);
+    width: 24px; height: 24px; border-radius: 4px;
+  }
+  .archive-info { flex: 1; min-width: 0; }
+  .archive-title { margin: 0; font-size: 14px; font-weight: 700; }
+  .archive-date { margin: 2px 0 0; font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .archive-item a {
+    flex-shrink: 0; color: var(--sky-deep); font-weight: 700; text-decoration: none; font-size: 13.5px;
+  }
+  :root:not([data-theme="light"]) .archive-item a,
+  :root[data-theme="dark"] .archive-item a { color: var(--sky); }
+  .archive-item a:hover { text-decoration: underline; }
+
   /* schedule */
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   thead th {
@@ -325,7 +362,9 @@
     <nav class="jump">
       <a href="#why">目的・ゴール</a>
       <a href="#schedule">日程</a>
+      <a href="#instructor">講師</a>
       <a href="#prep">事前準備</a>
+      <a href="#archive">昨年度アーカイブ</a>
       <a href="#faq">よくある質問</a>
       <a href="#links">資料・リンク</a>
     </nav>
@@ -335,7 +374,9 @@
 <div class="tabbar">
   <a href="#why">目的・ゴール</a>
   <a href="#schedule">日程</a>
+  <a href="#instructor">講師</a>
   <a href="#prep">事前準備</a>
+  <a href="#archive">昨年度アーカイブ</a>
   <a href="#faq">よくある質問</a>
   <a href="#links">資料・リンク</a>
 </div>
@@ -444,6 +485,21 @@
     </div>
   </section>
 
+  <section id="instructor">
+    <h2>講師</h2>
+    <div class="instructor-card">
+      <div class="instructor-body">
+        <p class="instructor-name">小向 洋誌 <span class="instructor-org">氏</span></p>
+        <p class="instructor-role">J.フロントリテイリング株式会社　人財戦略統括部グループ人財開発部　専任部長</p>
+        <p class="instructor-desc">
+          ヤフー／LINEヤフーでCulture Development室長・HRBP本部部長を歴任。専門は組織開発・人材開発。
+          事業部と並走し、組織の具体的な課題解決を推進してきた。「才能と情熱を解き放つ」をポリシーに、
+          人と組織が最高のパフォーマンスを発揮できる場をつくり、事業を前進させることを追求している。
+        </p>
+      </div>
+    </div>
+  </section>
+
   <section id="prep">
     <h2>事前準備チェックリスト</h2>
     <div class="checklist" id="checklist">
@@ -457,6 +513,54 @@
       </label>
     </div>
     <p class="checklist-hint">チェックはこの端末のブラウザにのみ保存されます（他の方には共有されません）。</p>
+  </section>
+
+  <section id="archive">
+    <h2>昨年度からの接続</h2>
+    <p class="archive-lead">
+      昨年度（令和7年度）の研修は、<strong>「組織」</strong>に焦点を当てて実施しました。
+      経営と人材戦略の接続、リーダーシップと対話の設計、1on1・フィードバックの技術、
+      組織を耕す見立て方——いわば、任せるための土台となる「組織開発」を扱った回です。
+    </p>
+    <p class="archive-lead">
+      今年度は、その土台の上に立って<strong>「人」</strong>に焦点を移します。
+      抽象的な組織論ではなく、「誰に・何を・どこまで任せ、どう支援するか」という、
+      一人ひとりとの関係設計に踏み込みます。
+    </p>
+    <div class="archive-list">
+      <div class="archive-item">
+        <span class="archive-no">1</span>
+        <div class="archive-info">
+          <p class="archive-title">経営と人材戦略の接続点を見つける</p>
+          <p class="archive-date">2025/10/13</p>
+        </div>
+        <a href="archive/251013_第1回_経営と人材戦略の接続点を見つける.pdf" target="_blank" rel="noopener">開く ↗</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-no">2</span>
+        <div class="archive-info">
+          <p class="archive-title">リーダーシップと対話の再設計</p>
+          <p class="archive-date">2025/11/01</p>
+        </div>
+        <a href="archive/251101_第2回_リーダーシップと対話の再設計.pdf" target="_blank" rel="noopener">開く ↗</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-no">3</span>
+        <div class="archive-info">
+          <p class="archive-title">1on1の技術・コーチングとフィードバック</p>
+          <p class="archive-date">2025/11/22</p>
+        </div>
+        <a href="archive/251122_第3回_1on1の技術・コーチングとフィードバック.pdf" target="_blank" rel="noopener">開く ↗</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-no">4</span>
+        <div class="archive-info">
+          <p class="archive-title">組織を耕す手法と見立て</p>
+          <p class="archive-date">2025/11/29</p>
+        </div>
+        <a href="archive/251129_第4回_組織を耕す手法と見立て.pptx" target="_blank" rel="noopener">開く ↗</a>
+      </div>
+    </div>
   </section>
 
   <section id="faq">
