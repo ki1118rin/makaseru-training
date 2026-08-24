@@ -192,6 +192,28 @@
   :root[data-theme="dark"] h2 { color: var(--sky); }
   h2 .num { font-size: 14px; color: var(--muted); font-weight: 700; }
 
+  /* why */
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px; }
+  .why-card {
+    background: var(--card); border: 1px solid var(--hair); border-radius: 4px;
+    padding: 18px 20px; border-top: 3px solid var(--sky);
+  }
+  .why-label {
+    display: inline-block; font-size: 11.5px; font-weight: 700; color: #fff;
+    background: var(--sky-deep); border-radius: 999px; padding: 3px 11px; margin-bottom: 10px;
+  }
+  .why-lead { font-size: 15.5px; font-weight: 900; color: var(--sky-deep); margin: 0 0 8px; }
+  :root:not([data-theme="light"]) .why-lead,
+  :root[data-theme="dark"] .why-lead { color: var(--sky); }
+  .why-body { font-size: 13.5px; color: var(--ink); margin: 0; }
+  .why-body strong { color: var(--sky-deep); }
+  :root:not([data-theme="light"]) .why-body strong,
+  :root[data-theme="dark"] .why-body strong { color: var(--sky); }
+  .why-points { margin: 0; padding-left: 20px; font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
+  @media (max-width: 620px) {
+    .why-grid { grid-template-columns: 1fr; }
+  }
+
   /* schedule */
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   thead th {
@@ -297,6 +319,7 @@
       <p class="sub">ここを見れば、日程・準備・よくある質問が確認できます。</p>
     </div>
     <nav class="jump">
+      <a href="#why">目的・ゴール</a>
       <a href="#schedule">日程</a>
       <a href="#prep">事前準備</a>
       <a href="#faq">よくある質問</a>
@@ -306,6 +329,7 @@
 </header>
 
 <div class="tabbar">
+  <a href="#why">目的・ゴール</a>
   <a href="#schedule">日程</a>
   <a href="#prep">事前準備</a>
   <a href="#faq">よくある質問</a>
@@ -313,6 +337,37 @@
 </div>
 
 <div class="page">
+  <section id="why">
+    <h2>この研修の目的とゴール</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-label">何のために</span>
+        <p class="why-lead">「任せる」を、感覚ではなく構造として身につける</p>
+        <p class="why-body">
+          「任せる」＝「丸投げ」ではありません。期待・範囲・支援をどう設計するか、という技術です。
+          目的は経営者ご自身のマインドチェンジではなく、<strong>人が育つこと</strong>。
+          「挑戦の機会をつくること」と「フィードバックを返すこと」を軸に、
+          管理職・次世代リーダーが仕事を任され、力を発揮できる状態をつくります。
+        </p>
+      </div>
+      <div class="why-card">
+        <span class="why-label">何をゴールとするか</span>
+        <p class="why-lead">計画発表ではなく、小さな実践報告</p>
+        <p class="why-body">
+          最終回（第5回）のゴールは、立派な計画を発表することではありません。
+          全5回を通じて「自社の中で誰に・何を・どこまで任せ、どう支援するか」を言語化したうえで、
+          研修期間中に<strong>小さくてもいいので実際に一歩を踏み出していただく</strong>こと、
+          そしてその結果を持ち寄って報告し合うことをゴールにしています。
+        </p>
+      </div>
+    </div>
+    <ul class="why-points">
+      <li>「任せられない理由」を、②相手の力が足りない／③自分が手放せない、の2つに絞って構造的に扱います</li>
+      <li>自己理解・他者理解をふまえたうえで、何をどう任せるかを定量・定性の両面から見立てます</li>
+      <li>「中小企業・小規模事業者人材活用ガイドライン（令和5年度）」を参照しながら進めます</li>
+    </ul>
+  </section>
+
   <section id="schedule">
     <h2>日程<span class="num">全5回</span></h2>
     <div class="table-wrap">
