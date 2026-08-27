@@ -296,6 +296,8 @@
   .check-item.done { border-color: var(--ok); background: var(--ok-soft); }
   .check-item.done .txt { text-decoration: line-through; text-decoration-color: var(--muted); }
   .checklist-hint { font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .prep-sub { font-size: 15px; font-weight: 600; margin: 22px 0 10px; }
+  .prep-sub:first-of-type { margin-top: 0; }
 
   /* faq */
   details.faq {
@@ -502,20 +504,27 @@
 
   <section id="prep">
     <h2>事前準備チェックリスト</h2>
-    <div class="checklist" id="checklist">
+
+    <h3 class="prep-sub">9/12（第1回）までに</h3>
+    <div class="checklist" id="checklist-0912">
       <label class="check-item" data-key="chk-form">
         <input type="checkbox">
-        <span class="txt">Googleフォームへのお申し込み・参加確認・事前準備・アンケートのご記入をお願いします（9/12までに）<small><a href="https://forms.gle/sUdT73EUfPMMY9Y17" target="_blank" rel="noopener">フォームを開く ↗</a></small></span>
-      </label>
-      <label class="check-item" data-key="chk-sf-self">
-        <input type="checkbox">
-        <span class="txt">ストレングスファインダー（SF）を受検する（受講者ご本人）<small>費用・受検方法は別途ご案内します</small></span>
-      </label>
-      <label class="check-item" data-key="chk-sf-team">
-        <input type="checkbox">
-        <span class="txt">育成したい部下3〜5名分のSF受検を手配する<small>本人の同意を得たうえで受検を依頼してください</small></span>
+        <span class="txt">Googleフォームへお申し込みください<small><a href="https://forms.gle/sUdT73EUfPMMY9Y17" target="_blank" rel="noopener">フォームを開く ↗</a></small></span>
       </label>
     </div>
+
+    <h3 class="prep-sub">9/26（第2回）までに</h3>
+    <div class="checklist" id="checklist-0926">
+      <label class="check-item" data-key="chk-sf-self">
+        <input type="checkbox">
+        <span class="txt">ストレングスファインダー（SF）を受検する（受講者ご本人＋育成したい部下）<small>費用・受検方法は別途ご案内します</small></span>
+      </label>
+      <label class="check-item" data-key="chk-sf-share">
+        <input type="checkbox">
+        <span class="txt">SFの受検結果（データ）を事務局に共有する<small>本人の同意を得たうえで共有をお願いします</small></span>
+      </label>
+    </div>
+
     <p class="checklist-hint">チェックはこの端末のブラウザにのみ保存されます（他の方には共有されません）。</p>
   </section>
 
