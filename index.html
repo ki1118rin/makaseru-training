@@ -255,6 +255,31 @@
   :root[data-theme="dark"] .archive-item a { color: var(--sky); }
   .archive-item a:hover { text-decoration: underline; }
 
+  /* venue */
+  .venue-list { display: grid; gap: 10px; margin-top: 4px; }
+  .venue-item {
+    background: var(--card); border: 1px solid var(--hair); border-radius: 4px;
+    padding: 16px 18px; border-left: 3px solid var(--sky);
+  }
+  .venue-tag {
+    display: inline-block; font-size: 11px; font-weight: 700; color: #fff;
+    background: var(--sky-deep); border-radius: 3px; padding: 2px 8px; margin-bottom: 8px;
+  }
+  :root:not([data-theme="light"]) .venue-tag,
+  :root[data-theme="dark"] .venue-tag { background: var(--sky); color: #06232f; }
+  .venue-name { margin: 0 0 4px; font-size: 15px; font-weight: 900; color: var(--sky-deep); }
+  :root:not([data-theme="light"]) .venue-name,
+  :root[data-theme="dark"] .venue-name { color: var(--sky); }
+  .venue-detail { margin: 0 0 2px; font-size: 13.5px; color: var(--ink); }
+  .venue-detail.muted { color: var(--muted); }
+  .venue-item a {
+    display: inline-block; margin-top: 8px; color: var(--sky-deep); font-weight: 700;
+    text-decoration: none; font-size: 13px;
+  }
+  :root:not([data-theme="light"]) .venue-item a,
+  :root[data-theme="dark"] .venue-item a { color: var(--sky); }
+  .venue-item a:hover { text-decoration: underline; }
+
   /* schedule */
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   thead th {
@@ -455,7 +480,7 @@
           <tr>
             <td><span class="col-no">1</span></td>
             <td class="col-date">9/12（土）</td>
-            <td class="col-time">14:00–17:00<br>対面（石巻市内）</td>
+            <td class="col-time">14:00–17:00<br>対面：石巻市かわまち交流センター（かわべい）</td>
             <td class="col-theme">「任せる」の構造理解<br><span class="note">自社が詰まっている場所の特定</span></td>
           </tr>
           <tr>
@@ -484,6 +509,25 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </section>
+
+  <section id="venue">
+    <h2>9/12 会場・懇親会</h2>
+    <div class="venue-list">
+      <div class="venue-item">
+        <span class="venue-tag">研修会場</span>
+        <p class="venue-name">石巻市かわまち交流センター（かわべい）</p>
+        <p class="venue-detail muted">14:00–17:00</p>
+        <a href="https://maps.app.goo.gl/zSq94aLS2zWGd4v46" target="_blank" rel="noopener">地図で見る ↗</a>
+      </div>
+      <div class="venue-item">
+        <span class="venue-tag">懇親会（任意参加）</span>
+        <p class="venue-name">わきあいあい</p>
+        <p class="venue-detail">宮城県石巻市鋳銭場3-19 2F</p>
+        <p class="venue-detail muted">18:00〜／飲み放題付き5,000円</p>
+        <a href="https://maps.app.goo.gl/DYggeuL7MbwKriDg9" target="_blank" rel="noopener">地図で見る ↗</a>
+      </div>
     </div>
   </section>
 
