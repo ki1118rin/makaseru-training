@@ -309,6 +309,12 @@
   :root[data-theme="dark"] .col-date { color: var(--sky); }
   .col-time { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
   .col-theme { font-weight: 700; }
+  .col-mat { white-space: nowrap; font-size: 12.5px; }
+  .col-mat a { display: block; color: var(--sky-deep); font-weight: 700; text-decoration: none; }
+  .col-mat a + a { margin-top: 4px; }
+  .col-mat a:hover { text-decoration: underline; }
+  :root:not([data-theme="light"]) .col-mat a,
+  :root[data-theme="dark"] .col-mat a { color: var(--sky); }
   .note { font-weight: 400; color: var(--muted); font-size: 12.5px; }
   .tbd {
     display: inline-block; margin-top: 4px; font-size: 11px; color: #fff;
@@ -486,37 +492,42 @@
     <h2>日程<span class="num">全5回</span></h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th></th><th>日程</th><th>時間・形式</th><th>テーマ</th></tr></thead>
+        <thead><tr><th></th><th>日程</th><th>時間・形式</th><th>テーマ</th><th>2026資料</th></tr></thead>
         <tbody>
           <tr>
             <td><span class="col-no">1</span></td>
             <td class="col-date">9/12（土）</td>
             <td class="col-time">14:00–17:00<br>対面：石巻市かわまち交流センター（かわべい）</td>
             <td class="col-theme">「任せる」の構造理解<br><span class="note">自社が詰まっている場所の特定</span></td>
+            <td class="col-mat"><a href="materials/20260912_第1回_任せるを設計する.pdf" target="_blank" rel="noopener">資料 ↗</a></td>
           </tr>
           <tr>
             <td><span class="col-no">2</span></td>
             <td class="col-date">9/26（土）</td>
             <td class="col-time">14:00–17:00<br>対面：石巻ガスビル3F</td>
             <td class="col-theme">人を見立てる<br><span class="note">誰に渡すか・その人への伝え方</span></td>
+            <td class="col-mat"><a href="materials/20260926_第2回_人を見立てる.pdf" target="_blank" rel="noopener">資料 ↗</a><a href="materials/20260926_第2回_資料_ストレングスファインダー資質一覧表.pdf" target="_blank" rel="noopener">補助：SF資質一覧 ↗</a></td>
           </tr>
           <tr>
             <td><span class="col-no">3</span></td>
             <td class="col-date">10/3（土）</td>
             <td class="col-time">10:00–12:00<br>オンライン</td>
             <td class="col-theme">仕事を見立てる<br><span class="note">渡す仕事と、任せる範囲・判断ライン</span></td>
+            <td class="col-mat"><a href="materials/20261003_第3回_仕事を見立てる.pdf" target="_blank" rel="noopener">資料 ↗</a></td>
           </tr>
           <tr>
             <td><span class="col-no">4</span></td>
             <td class="col-date">10/17（土）</td>
             <td class="col-time">13:00–15:00<br>オンライン</td>
             <td class="col-theme">任せる対話と支援設計<br><span class="note">誰に、いつ、何を伝えるかの決定</span></td>
+            <td class="col-mat"><a href="materials/20261017_第4回_任せる対話と支援設計.pdf" target="_blank" rel="noopener">資料 ↗</a></td>
           </tr>
           <tr>
             <td><span class="col-no">5</span></td>
             <td class="col-date">11/21（土）</td>
             <td class="col-time">13:00–<br>会場：未定（仙台を想定）</td>
             <td class="col-theme">実践報告<br><span class="note">やってみた結果と、次の一手</span></td>
+            <td class="col-mat"><span class="note">後日公開</span></td>
           </tr>
         </tbody>
       </table>
