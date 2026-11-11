@@ -267,6 +267,15 @@
   .archive-item:hover .archive-open { text-decoration: underline; }
 
   /* venue */
+  .bring-in {
+    margin: 0 0 10px; padding: 10px 12px; border-radius: 8px;
+    background: var(--sky-deep); color: #fff; font-size: 15px; font-weight: 900; line-height: 1.5;
+  }
+  :root:not([data-theme="light"]) .bring-in,
+  :root[data-theme="dark"] .bring-in { background: var(--sky); color: #06232f; }
+  .bring-big { font-size: 22px; letter-spacing: .04em; }
+  .hw-list { margin: 6px 0 10px; padding-left: 1.4em; font-size: 14px; }
+  .hw-list li { margin-bottom: 4px; }
   .venue-list { display: grid; gap: 10px; margin-top: 4px; }
   .venue-item {
     background: var(--card); border: 1px solid var(--hair); border-radius: 4px;
@@ -407,7 +416,8 @@
     <nav class="jump">
       <a href="#why">目的・ゴール</a>
       <a href="#schedule">日程</a>
-      <a href="#venue-1121">11/21会場・懇親会</a>
+      <a href="#homework-1121">11/21までの宿題</a>
+      <a href="#venue-1121">11/21会場・懇親会・二次会</a>
       <a href="#materials">2026資料</a>
       <a href="#archive">2025資料</a>
       <a href="#venue-past">過去の会場・事前準備</a>
@@ -421,7 +431,8 @@
 <div class="tabbar">
   <a href="#why">目的・ゴール</a>
   <a href="#schedule">日程</a>
-  <a href="#venue-1121">11/21会場・懇親会</a>
+  <a href="#homework-1121">11/21までの宿題</a>
+  <a href="#venue-1121">11/21会場・懇親会・二次会</a>
   <a href="#materials">2026資料</a>
   <a href="#archive">2025資料</a>
   <a href="#venue-past">過去の会場・事前準備</a>
@@ -539,8 +550,31 @@
     </div>
   </section>
 
+  <section id="homework-1121">
+    <h2>11/21までの宿題<span class="num">提出 11/18（水）</span></h2>
+    <div class="venue-list">
+      <div class="venue-item">
+        <span class="venue-tag">報告シート</span>
+        <p class="venue-name">この1か月に任せてみたことを、Googleスライドにまとめてください</p>
+        <ol class="hw-list">
+          <li>何を、誰に任せたか</li>
+          <li>どう伝えたか（相手のリアクションも）</li>
+          <li>結果（実践して、相手がどう動いたか）</li>
+          <li>1〜3をふまえた、自分の任せ方の自己採点（100点満点）と、その理由（良かったこと・改善したいこと）</li>
+        </ol>
+        <p class="venue-detail">4の自己採点が、当日いちばんお聞きしたいところです。</p>
+        <p class="venue-detail muted">短ければ、全社分で1枚でも構いません。写真は任意で、3枚ほどまで。</p>
+        <p class="venue-detail muted">全社が見られる1つのファイルに書き込みます。当日はそのまま投影します。</p>
+        <p class="venue-detail muted">学びや総括は事前に書かず、当日ひとことずつお話しください。</p>
+        <p class="venue-detail">実践できなかった場合は、何が妨げになったかを書いていただければ十分です。</p>
+        <p class="venue-detail muted">当日の持ち時間は1社15分（報告7分＋コメント）です。</p>
+        <p class="venue-detail muted">提出用スライドのリンクは、LINEグループでお送りします。</p>
+      </div>
+    </div>
+  </section>
+
   <section id="venue-1121">
-    <h2>11/21 第5回 会場・懇親会</h2>
+    <h2>11/21 第5回 会場・懇親会・二次会</h2>
     <div class="venue-list">
       <div class="venue-item">
         <span class="venue-tag">11/21 研修会場</span>
@@ -557,6 +591,17 @@
         <p class="venue-detail muted">18:00〜／貸切／会費6,000円（税込）</p>
         <p class="venue-detail">ご参加の確認は、個別にご連絡します</p>
         <a href="https://maps.app.goo.gl/VedgDtdLEtm6jRCv5" target="_blank" rel="noopener">地図で見る ↗</a>
+      </div>
+      <div class="venue-item">
+        <span class="venue-tag">二次会（任意参加）</span>
+        <p class="bring-in">二次会は<span class="bring-big">「持ち込み」</span>で実施します<br>自社商品を持ってきていただけると嬉しいです</p>
+        <p class="venue-name">OFFICE canvas（研修会場と同じ）</p>
+        <p class="venue-detail">〒982-0841 宮城県仙台市太白区向山4丁目18-7</p>
+        <p class="venue-detail muted">懇親会のあと／地下鉄南北線 愛宕橋駅から徒歩7分</p>
+        <p class="venue-detail">お酒（飲み物）と、つまみ（できれば自社商品）をお持ちください。</p>
+        <p class="venue-detail">各種、調理器具は完備しています。</p>
+        <p class="venue-detail">ご参加の確認は、個別にご連絡します</p>
+        <a href="https://maps.app.goo.gl/FAFHn6PNBnpJoeKx6" target="_blank" rel="noopener">地図で見る ↗</a>
       </div>
     </div>
   </section>
